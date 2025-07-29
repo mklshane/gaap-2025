@@ -11,13 +11,13 @@ import { GameState } from "../rlgl/GameState";
 import { TransitionsTest } from "./transitions/transitionsTest";
 import { GuessTheSongSpectator } from "./guessTheSong";
 
-const SERVER_URL = "https://vhk7fc12-3000.asse.devtunnels.ms";
+const SERVER_URL = "https://gaap-server.onrender.com";
 
 
 // constants
 const BASE_PICTURE_URL = "https://mydcampus.dlsl.edu.ph/photo_id/";
-const hostname = "vhk7fc12-3000.asse.devtunnels.ms/rlgl";
-const url = `wss://${hostname}`;
+const hostname = "gaap-server.onrender.com/rlgl";
+const url = `https://${hostname}`;
 
 
 
