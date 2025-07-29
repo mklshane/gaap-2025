@@ -1,0 +1,97 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.section-container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+/* Outlined */
+.section-container .card {
+    border: 1px solid var(--outline-color);
+    border-radius: 8px;
+
+    padding-left: 1em;
+    padding-right: 1em;
+
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    transition: 0.3s;
+}
+
+/* hover */
+.section-container .card:hover {
+    background-color: var(--hover-color);
+}
+
+.section-container input {
+    border: 1px solid var(--outline-color);
+    border-radius: 8px;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    transition: 0.3s;
+    min-height: 2.5em;
+    background-color: aliceblue;
+    box-shadow:  #121212 10px 10px 0px;
+    font-size: x-large;
+
+    /* numbers only */
+    text-align: start;
+
+    appearance: textfield;
+    color: #121212;
+    font-family: "Spotify", sans-serif;
+}
+
+.section-container input::-webkit-outer-spin-button,
+.section-container input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.section-container input:focus {
+    outline: none;
+}
+
+.section-container button{
+    background-color: #f2ff48 ;
+    box-shadow: #121212 5px 10px 0px;
+    
+    font-family: "Spotify", sans-serif;
+    color: #121212;
+}
+
+.section-container button:hover {
+    background-color: #c0c93b;
+    box-shadow: #121212 0px 0px 0px;
+}
+
+.error {
+    font-family: "Spotify", sans-serif;
+    color: rgb(245, 74, 74);
+    margin-top: 15px;
+    margin-bottom: 0;
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+    text-shadow: #121212 3px 3px 0px;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}

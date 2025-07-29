@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Spotify';
+    font-weight: bold;
+    src: url("/src/assets/fonts/Spotify-Bold.otf");
+}
+
+
+
+.spech1 {
+    color: #503658;
+    font-size: 7.3rem;
+    letter-spacing: 0rem;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+body {
+    display: flex;
+    place-items: center;
+    font: 'Spotify';
+    letter-spacing: 0rem;
+    color: #503658;
+    background-color: #CFF469;
+    display: flex;
+}
+
+.gaap-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'Spotify';
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.left-year {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.right-year {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.top-year {
+    position: absolute;
+    top: 0;
+    right: 25rem;
+}
+
+
+
+
+
+@keyframes reveal {
+    0% {
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

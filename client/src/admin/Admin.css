@@ -1,0 +1,32 @@
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100vh;
+    min-width: 320px;
+}
+
+
+.admin-container button {
+    flex: 1;
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+.admin-container button.green {
+    background-color: green;
+    color: white;
+}
+
+.admin-container button.red {
+    background-color: red;
+    color: white;
+}
+
+.admin-container button.red:hover {
+    background-color: darkred;
+}
+
+.admin-container button.green:hover {
+    background-color: darkgreen;
+}

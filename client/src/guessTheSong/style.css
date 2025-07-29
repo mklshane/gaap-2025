@@ -1,0 +1,52 @@
+#guess-the-song-text-area {
+  width: 100%;
+  placeholder: "Enter the song name";
+  font-family: "Spotify", sans-serif;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border: 2px solid #ccc;
+  border-radius: 1rem;
+  background-color: #f8f8f8;
+  font-size: 2rem;
+  resize: none;
+  color: black;
+}
+
+#guess-the-song-text-area::placeholder {
+  color: black;
+}
+
+#guess-the-song-text-area:focus {
+  outline: none;
+}
+
+#guess-the-song-submit-button {
+    width: 100%;
+    font-family: "Spotify", sans-serif;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* border: 2px solid #ccc; */
+    border-radius: 1rem;
+    background-color: #f2ff48;
+    font-size: 2rem;
+    color: #121212;
+}
+
+/* loading state (button) */
+#guess-the-song-submit-button.loading {
+    background-color: #ff8b20;
+    color: #f8f8f8;
+}
+
+#guess-the-song-submit-button.submitted {
+    background-color: #12d760;
+    color: #121212;
+}

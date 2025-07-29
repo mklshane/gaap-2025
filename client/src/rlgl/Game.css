@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Spotify';
+    font-weight: bold;
+    src: url("/src/assets/fonts/Spotify-Bold.otf");
+}
+
+
+h1 {
+    font: 'Spotify';
+}
+
+
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    font: 'Spotify';
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+.card {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+.read-the-docs {
+    color: #888;
+}
