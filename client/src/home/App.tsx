@@ -9,12 +9,10 @@ const url = "wss://" + hostname; */
 
 const hostname = "gaap-server.onrender.com/rlgl";
 const url = "https://" + hostname;
-<<<<<<< HEAD
-=======
+
 
 /* const hostname = "localhost:3000/rlgl";
 const url = "http://" + hostname; */
->>>>>>> f8e53f2 (added restart function)
 
 /**
  * The Red Light Green Light game, this contains the logic for handling game states
