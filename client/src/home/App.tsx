@@ -7,8 +7,8 @@ import { UserProfile } from "../profile/profile";
 /* const hostname = "vhk7fc12-3000.asse.devtunnels.ms/rlgl";
 const url = "wss://" + hostname; */
 
-const hostname = "localhost:3000/rlgl";
-const url = "http://" + hostname;
+const hostname = "gaap-server.onrender.com/rlgl";
+const url = "https://" + hostname;
 
 /**
  * The Red Light Green Light game, this contains the logic for handling game states
