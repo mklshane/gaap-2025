@@ -19,6 +19,13 @@ const BASE_PICTURE_URL = "https://mydcampus.dlsl.edu.ph/photo_id/";
 const hostname = "gaap-server.onrender.com/rlgl";
 const url = `https://${hostname}`;
 
+/* const SERVER_URL = "http://localhost:3000";
+
+// constants
+const BASE_PICTURE_URL = "https://mydcampus.dlsl.edu.ph/photo_id/";
+const hostname = "localhost:3000/rlgl";
+const url = `http://${hostname}`; */
+
 
 
 /**

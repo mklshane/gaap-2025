@@ -5,6 +5,7 @@ import { GuessTheSong } from "../guessTheSong";
 
 /* const SERVER_URL = "https://vhk7fc12-3000.asse.devtunnels.ms"; */
 const SERVER_URL = "https://gaap-server.onrender.com";
+/* const SERVER_URL = "http://localhost:3000"; */
 
 export type UserProfile = {
     studentId: string;

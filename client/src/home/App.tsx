@@ -9,6 +9,12 @@ const url = "wss://" + hostname; */
 
 const hostname = "gaap-server.onrender.com/rlgl";
 const url = "https://" + hostname;
+<<<<<<< HEAD
+=======
+
+/* const hostname = "localhost:3000/rlgl";
+const url = "http://" + hostname; */
+>>>>>>> f8e53f2 (added restart function)
 
 /**
  * The Red Light Green Light game, this contains the logic for handling game states
@@ -29,7 +35,7 @@ export function RedLightGreenLight(
 
     function setupWebsocket(websocket: WebSocket) {
       websocket.onopen = () => {
-
+        console.log("web socket connected")
       };
 
       websocket.onmessage = (event) => {
@@ -90,6 +96,11 @@ export function RedLightGreenLight(
             setState(GameState.greenLight);
           }
         }
+        if (data.type === "restart") {
+          setState(GameState.idle);
+          setBackground("transparent");
+          console.log("Game restarted");
+        }
       };
 
       websocket.onerror = (event) => {
@@ -112,6 +123,7 @@ export function RedLightGreenLight(
       };
     }
 
+    console.log("Connecting with user id: " + userId)
     const socket = new WebSocket(url + "?userId=" + userId);
 
     setupWebsocket(socket);

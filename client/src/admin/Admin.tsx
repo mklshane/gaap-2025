@@ -3,8 +3,11 @@ import "./Admin.css";
 /* const hostname = "vhk7fc12-3000.asse.devtunnels.ms/rlgl";
 const url = `wss://${hostname}`; */
 
-const hostname = "gaap-server.onrender.com/rlgl";
-const url = `https://${hostname}`;
+const hostname = "gaap-server.onrender.com/rlgl"; 
+const url = `https://${hostname}`; 
+
+/* const hostname = "localhost:3000/rlgl";
+const url = `http://${hostname}`; */
 
 
 export function Admin() {
@@ -47,25 +50,35 @@ export function Admin() {
     }
 
     return (
-        <div className="admin-container">
-            <button
-                className="red"
-                onClick={() => {
-                    websocket.send(JSON.stringify({ type: "state", state: "red" }));
-                }}
-            >
-                RED LIGHT
-            </button>
+      <div className="admin-container">
+        <button
+          className="red"
+          onClick={() => {
+            websocket.send(JSON.stringify({ type: "state", state: "red" }));
+          }}
+        >
+          RED LIGHT
+        </button>
 
-            <button className="green" onClick={
-                () => {
-                    websocket.send(JSON.stringify({ type: "state", state: "green" }));
-                }
-            }>
-                GREEN LIGHT
-            </button>
-        </div>
-    )
+        <button
+          className="green"
+          onClick={() => {
+            websocket.send(JSON.stringify({ type: "state", state: "green" }));
+          }}
+        >
+          GREEN LIGHT
+        </button>
+
+        <button
+          className="restart-button"
+          onClick={() => {
+            websocket.send(JSON.stringify({ type: "restart" }));
+          }}
+        >
+          RESTART
+        </button>
+      </div>
+    );
 }
 
 
